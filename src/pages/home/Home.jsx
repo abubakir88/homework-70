@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("http://localhost:3000/products");
+        const res = await fetch("http://localhost:3000/data");
         const Data = await res.json();
         setProducts(Data);
       } catch (error) {
@@ -74,9 +74,11 @@ const Home = () => {
                         <img src={s3n} alt="" />
                       </div>
                     </div>
-                    <h2>{product.name}</h2>
-                    <p>{product.description}</p>
-                    <h3>{product.currentCost}</h3>
+                    <h2>{product.title}</h2>
+                    <p>{product.text}</p>
+                    <h3>
+                      {`Rp ${product.price}  `} <span>{product.old_price}</span>
+                    </h3>
                   </div>
                 ))}
               </div>

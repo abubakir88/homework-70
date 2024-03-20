@@ -151,11 +151,7 @@ main {
             height: 48px;
             margin-left: 35px;
             cursor: pointer;
-            font-size: 16px;
             font-weight: 600;
-            line-height: 24px;
-            letter-spacing: 0em;
-            text-align: center;
           }
           button:hover {
             background-color: #f4f5f7;
@@ -173,20 +169,12 @@ main {
           margin-top: 16px;
           margin-left: 16px;
           font-size: 24px;
-          font-weight: 600;
-          line-height: 29px;
-          letter-spacing: 0em;
-          text-align: left;
           color: #3a3a3a;
         }
         p {
           margin-top: 8px;
           margin-left: 16px;
           font-size: 16px;
-          font-weight: 500;
-          line-height: 24px;
-          letter-spacing: 0em;
-          text-align: left;
           color: #898989;
         }
         h3 {
@@ -194,10 +182,11 @@ main {
           margin-left: 16px;
           color: #3a3a3a;
           font-size: 20px;
-          font-weight: 600;
-          line-height: 30px;
-          letter-spacing: 0em;
-          text-align: left;
+          span {
+            font-size: 16px;
+            color: #ccc;
+            text-decoration: line-through;
+          }
         }
       }
     }

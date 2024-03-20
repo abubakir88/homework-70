@@ -4,9 +4,9 @@ import "./Shop.scss";
 // import s2I1 from "../../assets/s2-i1.svg";
 // import s2I2 from "../../assets/s2-i2.svg";
 // import s2I3 from "../../assets/s2-i3.svg";
-// import s3 from "../assets/s3-card.svg";
-// import s3i from "../assets/s3-card2.svg";
-// import s3n from "../assets/s3-card3.svg";
+import s3 from "../../assets/s3-card.svg";
+import s3i from "../../assets/s3-card2.svg";
+import s3n from "../../assets/s3-card3.svg";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
@@ -37,14 +37,14 @@ const Shop = () => {
                     <div className="card-nonee">
                       <button>Add to cart</button>
                       <div className="card-nonne">
-                        <img src={s3} alt="" />
-                        <img src={s3i} alt="" />
-                        <img src={s3n} alt="" />
+                        <img src={s3} alt="shop-img" />
+                        <img src={s3i} alt="shop-img" />
+                        <img src={s3n} alt="shop-img" />
                       </div>
                     </div>
-                    <h2>{product.name}</h2>
-                    <p>{product.description}</p>
-                    <h3>{product.currentCost}</h3>
+                    <h2>{product.title}</h2>
+                    <p>{product.text}</p>
+                    <h3>{product.price}</h3>
                   </div>
                 ))}
                 {products.map((product) => (

@@ -26,5 +26,8 @@ header {
     display: flex;
     gap: 48px;
     margin-left: 200px;
+    img {
+      cursor: pointer;
+    }
   }
 }
