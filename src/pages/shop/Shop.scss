@@ -1,7 +1,7 @@
 main {
   margin-top: 100px;
   .back {
-    background-image: url(../src/assets/ShopI.svg);
+    background-image: url(../src/assets/ShopI.png);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -76,6 +76,11 @@ main {
           line-height: 30px;
           letter-spacing: 0em;
           text-align: left;
+          span {
+            text-decoration: line-through;
+            font-size: 14px;
+            color: #ccc;
+          }
         }
       }
     }

@@ -44,23 +44,9 @@ const Shop = () => {
                     </div>
                     <h2>{product.title}</h2>
                     <p>{product.text}</p>
-                    <h3>{product.price}</h3>
-                  </div>
-                ))}
-                {products.map((product) => (
-                  <div className="s1-card">
-                    <img className="s1-i" src={product.img} />
-                    <div className="card-nonee">
-                      <button>Add to cart</button>
-                      <div className="card-nonne">
-                        <img src={s3} alt="" />
-                        <img src={s3i} alt="" />
-                        <img src={s3n} alt="" />
-                      </div>
-                    </div>
-                    <h2>{product.name}</h2>
-                    <p>{product.description}</p>
-                    <h3>{product.currentCost}</h3>
+                    <h3>
+                      {`Rp ${product.price}  `} <span>{product.old_price}</span>
+                    </h3>
                   </div>
                 ))}
               </div>
